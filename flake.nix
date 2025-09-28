@@ -3,9 +3,13 @@
 
   outputs = { self }: {
     templates = {
-      develop = {
+      template = {
         path = ./template;
-        description = "A very basic flake for develop";
+        description = "A very basic flake for develop Nix";
+      };
+      python = {
+        path = ./python;
+        description = "A very basic flake for develop python";
       };
     };
   };
