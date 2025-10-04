@@ -23,8 +23,11 @@
               sympy
               numba
             ]);
+          PYTHONCACHEPREFIX = "/tmp";
           pure = true;
           shellHook = ''
+            PYTHONPATH=$PYTHONPATH:$(pwd)/src
+            export PYTHONPATH
             exec zsh
           '';
         };
