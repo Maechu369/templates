@@ -1,0 +1,15 @@
+[project]
+name = "python template"
+description = "Template module of python"
+readme = "README.md"
+version = "0.1"
+authors = [
+	{ name="Hiroki Maeda", email="m6a7e0d8a3@gmail.com" },
+]
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
